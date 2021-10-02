@@ -2,7 +2,7 @@
   "name": "etheroll",
   "version": "2020.05.28",
   "private": true,
-  "homepage": "https://andremiras.github.io/etheroll/",
+  "homepage": "https://github.com/Victornavarro85/ethroll",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.5.0",
     "@sentry/browser": "^4.4.1",
