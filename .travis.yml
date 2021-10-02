@@ -1,0 +1,16 @@
+sudo: required
+
+language: generic
+
+services:
+  - docker
+
+env:
+  - DOCKER_COMMAND='make test CI=true'
+  - DOCKER_COMMAND='make lint'
+
+install:
+  - make docker/build
+
+script:
+  - make docker/run
