@@ -39,21 +39,6 @@ const NavSections = () => (
         </NavLink>
       </li>
       
-      <li className="nav-item">
-        <a
-          className="nav-link"
-          href="https://github.com/AndreMiras/etheroll"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-github-alt" />
-          &nbsp;
-          <FormattedMessage
-            id="headers.navsections.navlink.about"
-            defaultMessage="About"
-          />
-        </a>
-      </li>
       <LanguageUpdate />
     </ul>
   </div>
