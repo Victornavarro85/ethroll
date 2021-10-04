@@ -13,7 +13,7 @@ const BetSize = ({
         defaultMessage="Bet size"
       />
     </b>
-    <ValueSlider value={betSize} updateValue={updateBetSize} step={0.05} min={min} max={max} addonText="ETH" toFixedDigits={2} />
+    <ValueSlider value={betSize} updateValue={updateBetSize} step={0.00005} min={min} max={max} addonText="ETH" toFixedDigits={8} />
   </div>
 );
 BetSize.propTypes = {
@@ -21,10 +21,11 @@ BetSize.propTypes = {
   min: number,
   max: number,
   updateBetSize: func.isRequired,
+  step:0.00005
 };
 BetSize.defaultProps = {
-  min: 0,
-  max: 10,
+  min: 0.00001,
+  max: 0.001,
 };
 
 export default BetSize;
