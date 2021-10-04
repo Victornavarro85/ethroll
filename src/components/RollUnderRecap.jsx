@@ -28,7 +28,7 @@ const RollUnderRecap = ({ betSize, value }) => {
       </div>
       <div className="col-6">
         <p className="text-right mb-0">
-          {betSize.toFixed(2)}
+          {betSize.toFixed(8)}
           &nbsp;
           ETH
         </p>
@@ -41,7 +41,7 @@ const RollUnderRecap = ({ betSize, value }) => {
       </div>
       <div className="col-6">
         <p className="text-right">
-          {profit.toFixed(2)}
+          {profit.toFixed(8)}
           &nbsp;
           ETH
         </p>
