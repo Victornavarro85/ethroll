@@ -12,7 +12,7 @@ const contractAddresses = {
   [Networks.ropsten]: '0xe12c6dEb59f37011d2D9FdeC77A6f1A8f3B8B1e8',
   //[Networks.rinkeby]: '0xdF0A0a6f20DB04D3219a7DA6D42Ed9FE63EA6AE8'
   //[Networks.ropsten]: '0xCDa35b320db29C42ba3A36aC448D4C963AD2CcAe',
-  [Networks.rinkeby]: '0xb5d8090b54a1f566613116Ba0A62475fe4997cC3' //my contract- interactions work!
+  [Networks.rinkeby]: '0x07EC4C6a4DA14D8b137357E4713599771Ebfa538' //my contract- interactions work!
 
 };
 
