@@ -113,7 +113,7 @@ class Container extends React.Component {
     super(props);
     this.state = {
       alertDict: {},
-      betSize: 0.1,
+      betSize: 0.00001,
       chances: 50,
       minBet: BetSize.defaultProps.min,
       maxBet: BetSize.defaultProps.max,
