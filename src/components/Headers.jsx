@@ -38,7 +38,7 @@ const NavSections = () => (
           <span className="sr-only">(current)</span>
         </NavLink>
       </li>
-      
+
       <LanguageUpdate />
     </ul>
   </div>
@@ -46,6 +46,9 @@ const NavSections = () => (
 
 const Headers = () => (
   <header>
+    <div className="container centered">
+      <img src="logo-rollunder.png"></img>
+    </div>
     <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <Logo />
       <HamburgerBtn />

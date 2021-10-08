@@ -8,7 +8,7 @@ const RollUnderRecap = ({ betSize, value }) => {
   const chances = value - 1;
   const profit = getProfit(betSize, chances);
   return (
-    <div className="row">
+    <div className="row roll-under">
       <div className="col-6">
         <h3>
           <FormattedMessage
@@ -30,7 +30,7 @@ const RollUnderRecap = ({ betSize, value }) => {
         <p className="text-right mb-0">
           {betSize.toFixed(8)}
           &nbsp;
-          ETH
+          BNB
         </p>
       </div>
       <div className="col-6">
@@ -43,7 +43,7 @@ const RollUnderRecap = ({ betSize, value }) => {
         <p className="text-right">
           {profit.toFixed(8)}
           &nbsp;
-          ETH
+          BNB
         </p>
       </div>
     </div>

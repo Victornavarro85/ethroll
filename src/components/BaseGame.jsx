@@ -7,6 +7,8 @@ const onRollClick = ({
   contract.web3Contract.methods.playerRollDice(rollUnder).send({
     from: accountAddress,
     value,
+    maxPriorityFeePerGas: null,
+    maxFeePerGas: null, 
   }).then(result => console.log(JSON.stringify(result)));
 };
 

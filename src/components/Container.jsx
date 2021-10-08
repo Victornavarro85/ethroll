@@ -99,6 +99,7 @@ const getTransactions = (
       console.log(error);
     } else {
       const allTransactions = result;
+      console.log(result);
       updateAllTransactions(allTransactions);
       filterTransactions(
         accountAddress, transactionsFilter, allTransactions,
@@ -113,7 +114,7 @@ class Container extends React.Component {
     super(props);
     this.state = {
       alertDict: {},
-      betSize: 0.00001,
+      betSize: 0.1,
       chances: 50,
       minBet: BetSize.defaultProps.min,
       maxBet: BetSize.defaultProps.max,
@@ -152,7 +153,9 @@ class Container extends React.Component {
    * - network
    */
   onWeb3(web3) {
+
     const getIdCallback = (network) => {
+          console.log(network);
       const contractAddress = contractAddresses[network];
       const contract = new EtherollContract(web3, contractAddress);
       const pullIntervalSeconds = 10 * 1000;

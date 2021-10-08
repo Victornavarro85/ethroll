@@ -4,16 +4,16 @@ import { FormattedMessage } from 'react-intl';
 import ValueSlider from './ValueSlider';
 
 const BetSize = ({
-  betSize, min, max, updateBetSize,
+  betSize, min, max, updateBetSize
 }) => (
   <div className="form-group">
     <b>
       <FormattedMessage
         id="betsize.betsize"
-        defaultMessage="Bet size"
+        defaultMessage="Bet"
       />
     </b>
-    <ValueSlider value={betSize} updateValue={updateBetSize} step={0.00005} min={min} max={max} addonText="ETH" toFixedDigits={8} />
+    <ValueSlider value={betSize} updateValue={updateBetSize} step={0.05} min={0.1} max={max} addonText="BNB" toFixedDigits={8} />
   </div>
 );
 BetSize.propTypes = {
@@ -21,11 +21,10 @@ BetSize.propTypes = {
   min: number,
   max: number,
   updateBetSize: func.isRequired,
-  step:0.00005
 };
 BetSize.defaultProps = {
-  min: 0.00001,
-  max: 0.001,
+  min: 0.1,
+  max: 0.25
 };
 
 export default BetSize;

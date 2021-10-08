@@ -1,3 +1,105 @@
 .card.transactions {
   margin-top: 10px;
 }
+
+.row.first-row {
+
+    margin-bottom: 20px;
+}
+
+body{
+  color:#fff;
+  background-color: #000;
+}
+.navbar{
+  display:none;
+}
+.card{
+  background-color: #000;
+  }
+
+  .card-body {
+    padding: 0;
+}
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 900px;
+}
+
+.col-sm-2 {
+    flex: 0 0 16.666667%;
+    max-width: 10.667%;
+    padding-top: 3%;
+    padding-left: 2%;
+}
+
+  .rc-slider-handle {
+    border-radius: 0%;
+    border: solid 2px #aaa;
+    background-color: #aaa;
+    width:6px;
+  }
+
+  .rc-slider-mark-text {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.input-group{
+  display: none;
+}
+
+.form-group {
+    margin-bottom: 3rem;
+    padding-bottom: 0px;
+    margin-top: 1rem;
+}
+
+.row.roll-under {
+    margin-top: 0rem;
+}
+
+.rc-slider-track {
+    position: absolute;
+    left: 0;
+    height: 4px;
+    border-radius: 6px;
+    background-color: #007bff;
+}
+.small-img {
+
+    height: 140px;
+    margin-left: -45px;
+    margin-top: -45px;
+}
+
+.show{
+  display:block;
+}
+
+.hide{
+  display:none;
+}
+
+.list-group-item-success {
+    color: #00ff3a;
+    background-color: #000;
+}
+
+.list-group-item-danger {
+    color: red;
+    background-color: #000;
+}
+
+.list-group-item-secondary {
+    color: #fff;
+    background-color: #000;
+}
+
+.w-100 {
+    width: 103% !important;
+}
+
+.container.centered {
+    margin-top: -40px;
+    margin-bottom: 30px;
+}

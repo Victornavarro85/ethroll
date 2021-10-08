@@ -1,7 +1,7 @@
 import React from 'react';
 import { number, func } from 'prop-types';
 import { FormattedMessage } from 'react-intl';
-import ValueSlider from './ValueSlider';
+import ValueSlider from './ValueSliderW';
 
 const ChanceOfWinning = ({
   chances, min, max, updateChances,
@@ -19,6 +19,7 @@ const ChanceOfWinning = ({
       max={max}
       updateValue={updateChances}
       addonText="&nbsp;%&nbsp;"
+      dots step={1} defaultValue={50} dotStyle={{ borderColor: 'orange' }} activeDotStyle={{ borderColor: 'yellow' }}
     />
   </div>
 );

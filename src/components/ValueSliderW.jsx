@@ -3,12 +3,6 @@ import Slider from 'rc-slider/lib/Slider';
 import { func, number, string } from 'prop-types';
 import 'rc-slider/assets/index.css';
 
-const marks = {
-  0.1: '0.1',
-  0.15: '0.15',
-  0.20: '0.20',
-  0.25: '0.25'
-};
 
 const ValueSlider = ({
   value, updateValue, step, min, max, addonText, toFixedDigits,
@@ -31,7 +25,7 @@ const ValueSlider = ({
         {addon}
       </div>
       <div className="col">
-        <Slider onChange={updateValue} value={value} marks={marks} step={step} min={min} max={max} />
+        <Slider onChange={updateValue} value={value} step={step} min={min} max={max} />
       </div>
     </div>
   );

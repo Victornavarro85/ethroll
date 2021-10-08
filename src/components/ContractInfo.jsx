@@ -14,7 +14,7 @@ const ContractInfo = ({
       &nbsp;
       <FormattedMessage
         id="contractinfo.contract"
-        defaultMessage={'Contract ({contractBalance} ETH)'}
+        defaultMessage={'Contract ({contractBalance} BNB)'}
         values={{ contractBalance: contractBalance.toFixed(2) }}
       />
     </div>
@@ -42,7 +42,7 @@ const ContractInfo = ({
       &nbsp;
       <FormattedMessage
         id="contractinfo.account"
-        defaultMessage={'Account ({accountBalance} ETH)'}
+        defaultMessage={'Account ({accountBalance} BNB)'}
         values={{ accountBalance: accountBalance.toFixed(2) }}
       />
     </div>
@@ -55,7 +55,7 @@ const ContractInfo = ({
   );
 
   return (
-    <div className="row">
+    <div className="row first-row">
       {accountBalanceBlock}
       {accountAddressBlock}
       {contractBalanceBlock}
